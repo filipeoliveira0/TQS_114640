@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: ex2_3.ProductFInderServiceIT
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.563 s -- in ex2_3.ProductFInderServiceIT
