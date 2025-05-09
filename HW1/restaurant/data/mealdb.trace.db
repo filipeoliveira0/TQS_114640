@@ -1,0 +1,12 @@
+2025-04-09 19:07:24.528190+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MENU_ITEM" not found (this database is empty); SQL statement:
+DELETE FROM menu_item [42104-232]
+2025-04-09 19:10:34.361935+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MENUITEM" not found (this database is empty); SQL statement:
+DELETE FROM menuitem [42104-232]
+2025-04-09 19:13:50.058935+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MENUITEM" not found (this database is empty); SQL statement:
+DELETE FROM menuitem [42104-232]
+2025-04-09 19:14:07.705692+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "RESTAURANT" not found (this database is empty); SQL statement:
+INSERT INTO restaurant (id, name, location, capacity) VALUES (1, 'Main Campus Cafeteria', 'Building A, Central Campus', 150), (2, 'Engineering Bistro', 'Engineering Complex, Room EB-12', 75), (3, 'Library Coffee Corner', 'Ground Floor, University Library', 40) [42104-232]

@@ -1,0 +1,5 @@
+package homework.restaurant.Models;
+
+public enum MenuType {
+    MEAT, FISH, VEGETARIAN, VEGAN, SPECIAL, DESSERT, DRINK, APPETIZER, BREAKFAST, BRUNCH, LUNCH, DINNER, MAIN_COURSE, SANDWICH, 
+}

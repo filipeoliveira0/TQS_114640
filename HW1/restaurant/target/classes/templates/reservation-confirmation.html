@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Reservation Confirmation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header bg-success text-white">
+            <h2>Reservation Confirmed!</h2>
+        </div>
+        <div class="card-body">
+            <h3 th:text="${reservation.restaurant.name}"></h3>
+            <p><strong>Date:</strong> <span th:text="${#temporals.format(reservation.date, 'MMMM dd, yyyy')}"></span></p>
+            <p><strong>Time:</strong> <span th:text="${#temporals.format(reservation.time, 'HH:mm')}"></span></p>
+            <p><strong>Confirmation Code:</strong> <code th:text="${reservation.reservationCode}"></code></p>
+            
+            <div class="alert alert-info mt-4">
+                <h5>Important</h5>
+                <p>Please save your confirmation code. You'll need it to check or cancel your reservation.</p>
+            </div>
+            
+            <a th:href="@{/menu/{id}/home(id=${reservation.restaurant.id})}" 
+               class="btn btn-primary">
+               Back to Restaurant
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
